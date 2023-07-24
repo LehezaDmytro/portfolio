@@ -1,0 +1,28 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 40px;
+
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+}
