@@ -3,3 +3,45 @@
     font-size: 55px;
   }
 }
+
+.hero-main {
+  display: flex;
+}
+
+.socials__link {
+  transition: color 300ms;
+}
+
+.socials__link:hover {
+  color: #0a66c2;
+}
+
+.socials__icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.avatar {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  -webkit-animation: morpheus 8s ease-in-out infinite;
+  animation: morpheus 8s ease-in-out infinite;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes morpheus {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
