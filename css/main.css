@@ -15,7 +15,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 0 40px;
 }
 
@@ -55,21 +55,29 @@ header nav ul {
 }
 
 .hero h1 {
+  margin: 30px 0;
   font-size: 55px;
+}
+.hero p {
+  margin: 0 0 30px 0;
 }
 
 .hero-main {
   display: flex;
+  gap: 65px;
+  margin-bottom: 80px;
 }
 
+.socials {
+  display: flex;
+  gap: 10px;
+}
 .socials__link {
   transition: color 300ms;
 }
-
 .socials__link:hover {
   color: #0a66c2;
 }
-
 .socials__icon {
   width: 30px;
   height: 30px;
@@ -98,4 +106,32 @@ header nav ul {
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+}
+.tach-stack {
+  display: flex;
+  align-items: center;
+}
+.tach-stack p {
+  margin: 0;
+  padding-right: 20px;
+  margin-right: 30px;
+  font-weight: 600;
+  border-right: 2px solid darkgray;
+}
+.tach-stack ul {
+  display: inline-flex;
+  gap: 15px;
+}
+.tach-stack ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 0px 10px 0px;
+}
+.tach-stack ul li img {
+  width: 50px;
 }/*# sourceMappingURL=main.css.map */
