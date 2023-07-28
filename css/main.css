@@ -54,6 +54,9 @@ header nav ul {
   font-weight: 600;
 }
 
+.hero {
+  background-color: #f8f8f8;
+}
 .hero h1 {
   margin: 30px 0;
   font-size: 55px;
@@ -134,4 +137,12 @@ header nav ul {
 }
 .tech-stack ul li img {
   width: 50px;
+}
+
+.about__main-img img {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
