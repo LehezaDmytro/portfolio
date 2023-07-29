@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -5,6 +9,7 @@ body {
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 
@@ -139,10 +144,27 @@ header nav ul {
   width: 50px;
 }
 
+.about .container {
+  display: flex;
+  gap: 60px;
+}
 .about__main-img img {
   width: 350px;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+.about__text h2 {
+  margin-top: 0;
+}
+
+.projects__list li {
+  display: flex;
+}
+.projects__list li img {
+  width: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

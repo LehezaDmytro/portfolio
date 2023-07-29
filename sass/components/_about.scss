@@ -1,10 +1,21 @@
 .about {
+  .container {
+    display: flex;
+    gap: 60px;
+  }
+
   &__main-img {
     img {
       width: 350px;
       height: 350px;
       object-fit: cover;
       border-radius: 10px;
+    }
+  }
+
+  &__text {
+    h2 {
+      margin-top: 0;
     }
   }
 }

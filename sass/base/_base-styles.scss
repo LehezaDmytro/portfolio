@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -5,6 +9,7 @@ body {
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 

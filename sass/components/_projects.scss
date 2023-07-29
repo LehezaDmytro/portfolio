@@ -1,0 +1,13 @@
+.projects {
+  &__list {
+    li {
+      display: flex;
+
+      img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+}
