@@ -2,11 +2,58 @@
   &__list {
     li {
       display: flex;
+      justify-content: space-between;
 
-      img {
-        width: 400px;
-        height: 300px;
-        object-fit: cover;
+      height: 350px;
+      padding: 15px;
+
+      border-radius: 10px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: #fff;
+
+      .project-image {
+        width: 530px;
+
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        img {
+          width: 100%;
+
+          transform: translateY(0%);
+          transition: transform 8s ease-in-out;
+
+          &:hover {
+            transform: translateY(-83%);
+          }
+        }
+      }
+
+      .project-description {
+        width: 300px;
+
+        text-align: center;
+
+        span {
+          padding: 5px 10px;
+          font-weight: 600;
+
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        a {
+          display: block;
+          margin-top: 20px;
+
+          font-weight: 600;
+
+          transition: color 300ms;
+
+          &:hover {
+            color: #0a66c2;
+          }
+        }
       }
     }
   }

@@ -8,6 +8,12 @@ body {
   color: #2d2e32;
 }
 
+main {
+  & > section:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
+}
+
 ul {
   padding: 0;
   list-style: none;
