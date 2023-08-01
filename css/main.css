@@ -163,7 +163,7 @@ header nav ul {
 .projects__list li {
   display: flex;
   justify-content: space-between;
-  height: 350px;
+  height: 400px;
   padding: 15px;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -178,7 +178,7 @@ header nav ul {
 .projects__list li .project-image img {
   width: 100%;
   transform: translateY(0%);
-  transition: transform 8s ease-in-out;
+  transition: transform 10s ease-in-out;
 }
 .projects__list li .project-image img:hover {
   transform: translateY(-83%);
@@ -193,11 +193,17 @@ header nav ul {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .projects__list li .project-description a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   margin-top: 20px;
   font-weight: 600;
   transition: color 300ms;
 }
 .projects__list li .project-description a:hover {
   color: #0a66c2;
+}
+.projects__list li .project-description a .linl-icon {
+  stroke: currentColor;
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
       display: flex;
       justify-content: space-between;
 
-      height: 350px;
+      height: 400px;
       padding: 15px;
 
       border-radius: 10px;
@@ -22,7 +22,7 @@
           width: 100%;
 
           transform: translateY(0%);
-          transition: transform 8s ease-in-out;
+          transition: transform 10s ease-in-out;
 
           &:hover {
             transform: translateY(-83%);
@@ -43,15 +43,22 @@
         }
 
         a {
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+
           margin-top: 20px;
 
           font-weight: 600;
-
           transition: color 300ms;
 
           &:hover {
             color: #0a66c2;
+          }
+
+          .linl-icon{
+            stroke: currentColor;
           }
         }
       }
