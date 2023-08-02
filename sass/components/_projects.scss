@@ -2,7 +2,8 @@
   &__list {
     li {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 40px;
 
       height: 400px;
       padding: 15px;
@@ -11,6 +12,14 @@
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       background-color: #fff;
 
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+
       .project-image {
         width: 530px;
 
@@ -18,7 +27,7 @@
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-        img {
+        .vertical-scrolling-img {
           width: 100%;
 
           transform: translateY(0%);
@@ -31,6 +40,10 @@
       }
 
       .project-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         width: 300px;
 
         text-align: center;
@@ -40,6 +53,12 @@
           font-weight: 600;
 
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        &__links {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
         }
 
         a {
@@ -57,7 +76,7 @@
             color: #0a66c2;
           }
 
-          .linl-icon{
+          .linl-icon {
             stroke: currentColor;
           }
         }

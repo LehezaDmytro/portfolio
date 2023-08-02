@@ -18,6 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -122,58 +127,110 @@
           <h2>Portfolio</h2>
           <ul class="projects__list">
             <li>
-              <a class="project-image" href="https://unest-logistics.com.ua/"
-                  target="_blank"
-                  rel="noreferrer noopener">
+              <a
+                class="project-image"
+                href="https://unest-logistics.com.ua/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img
+                  class="vertical-scrolling-img"
                   src="./img/projects/unest-logistics.com.ua_.jpg"
                   alt="Project unest-logistics.com.ua"
                 />
               </a>
               <div class="project-description">
-                <h4>logistics transportation</h4>
-                <p>
-                  This is my first commercial project, a business card site for
-                  a logistics company with a form for sending customer data. The
-                  data from the form is sent to the telegram channel, for this
-                  purpose a server was deployed using Node.js and Express.js.
-                  The site was also indexed using Google Search Console to be
-                  included in Google search results.
-                </p>
-                <span>Node.js</span>
-                <span>SCSS</span>
-                <a
-                  href="https://unest-logistics.com.ua/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >Link <svg class="linl-icon" width="30px" height="30px"><use href="./img/icons.svg#link"></use></svg></a
-                >
-              </div>
-            </li>
-            <!-- <li>
-              <img src="" alt="" />
-              <div>
-                <h4></h4>
-                <p></p>
-                <span></span><span></span><a href=""></a><a href=""></a>
-              </div>
-            </li>
-            <li>
-              <img src="" alt="" />
-              <div>
-                <h4></h4>
-                <p></p>
-                <span></span><span></span><a href=""></a><a href=""></a>
+                <div>
+                  <h4>Unest Logistics</h4>
+                  <p>
+                    This is my first commercial project, a business card site
+                    for a logistics company with a form for sending customer
+                    data. The data from the form is sent to the telegram
+                    channel, for this purpose a server was deployed using
+                    Node.js and Express.js. The site was also indexed using
+                    Google Search Console to be included in Google search
+                    results.
+                  </p>
+                </div>
+                <div>
+                  <span>HTML</span>
+                  <span>SCSS</span>
+                  <span>JS</span>
+                  <span>Node.js</span>
+                  <a
+                    href="https://unest-logistics.com.ua/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Link
+                    <svg class="linl-icon" width="30px" height="30px">
+                      <use href="./img/icons.svg#link"></use></svg
+                  ></a>
+                </div>
               </div>
             </li>
             <li>
-              <img src="" alt="" />
-              <div>
-                <h4></h4>
-                <p></p>
-                <span></span><span></span><a href=""></a><a href=""></a>
+              <div class="project-image">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./img/projects/home-page.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/projects/find-pet.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/projects/news.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/projects/sponsors.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/projects/profile.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
-            </li> -->
+              <div class="project-description">
+                <div>
+                  <h4>Your Pet</h4>
+                  <p>
+                    The Your Pet application caters to individuals interested in
+                    locating, adopting, or selling their pets. The website
+                    provides a user-friendly search feature, allowing users to
+                    easily navigate through categories and apply filters.
+                    Additionally, users can create their profiles, where they
+                    can showcase and share information about their pets with
+                    other users.
+                  </p>
+                </div>
+                <div>
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>SCSS</span>
+                  <div class="project-description__links">
+                    <a
+                      href="https://github.com/AntonBabenko96/react-node-team-app"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      >Code
+                      <svg class="socials__icon" width="30px" height="30px">
+                        <use href="./img/icons.svg#git"></use></svg
+                    ></a>
+                    <a
+                      href="https://antonbabenko96.github.io/react-node-team-app/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      >Live Page
+                      <svg class="linl-icon" width="30px" height="30px">
+                        <use href="./img/icons.svg#link"></use></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -182,5 +239,8 @@
       </section>
     </main>
     <footer></footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
