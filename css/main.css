@@ -237,4 +237,14 @@ header nav ul {
 }
 .projects__list li .project-description a .linl-icon {
   stroke: currentColor;
+}
+
+footer {
+  background-color: #2d2e32;
+}
+footer .container {
+  padding: 30px 0;
+}
+footer h2 {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
