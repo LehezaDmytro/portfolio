@@ -1,0 +1,39 @@
+.contacts {
+  &__list {
+    display: flex;
+    gap: 30px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .icon-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+
+        background-color: #fff;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 0px 10px 0px;
+
+        .contacts-icon {
+          fill: $accent-color;
+        }
+      }
+
+      .contact-information {
+        p {
+          font-weight: 600;
+          margin: 0 0 15px;
+        }
+
+        &__link:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}

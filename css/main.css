@@ -247,4 +247,34 @@ footer .container {
 }
 footer h2 {
   color: #fff;
+}
+
+.contacts__list {
+  display: flex;
+  gap: 30px;
+}
+.contacts__list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contacts__list li .icon-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 0px 10px 0px;
+}
+.contacts__list li .icon-background .contacts-icon {
+  fill: #0a66c2;
+}
+.contacts__list li .contact-information p {
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+.contacts__list li .contact-information__link:hover {
+  color: #0a66c2;
 }/*# sourceMappingURL=main.css.map */
