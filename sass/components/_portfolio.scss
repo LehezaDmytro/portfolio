@@ -1,4 +1,11 @@
 .projects {
+  .container {
+    h2 {
+      color: $accent-color;
+      text-transform: uppercase;
+    }
+  }
+
   &__list {
     li {
       display: flex;
@@ -32,10 +39,6 @@
 
           transform: translateY(0%);
           transition: transform 10s ease-in-out;
-
-          &:hover {
-            transform: translateY(-83%);
-          }
         }
       }
 

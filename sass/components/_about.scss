@@ -14,8 +14,21 @@
   }
 
   &__text {
-    h2 {
-      margin-top: 0;
+    p {
+      line-height: 24px;
     }
   }
+}
+
+.section-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 17px;
+
+  color: $accent-color;
+}
+
+.section-subtitle {
+  margin-bottom: 50px;
+  font-size: 21px;
 }

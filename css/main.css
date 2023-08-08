@@ -172,10 +172,26 @@ header nav ul {
      object-fit: cover;
   border-radius: 10px;
 }
-.about__text h2 {
-  margin-top: 0;
+.about__text p {
+  line-height: 24px;
 }
 
+.section-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #0a66c2;
+}
+
+.section-subtitle {
+  margin-bottom: 50px;
+  font-size: 21px;
+}
+
+.projects .container h2 {
+  color: #0a66c2;
+  text-transform: uppercase;
+}
 .projects__list li {
   display: flex;
   justify-content: flex-start;
@@ -202,9 +218,6 @@ header nav ul {
   width: 100%;
   transform: translateY(0%);
   transition: transform 10s ease-in-out;
-}
-.projects__list li .project-image .vertical-scrolling-img:hover {
-  transform: translateY(-83%);
 }
 .projects__list li .project-description {
   display: flex;
