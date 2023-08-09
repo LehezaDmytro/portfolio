@@ -1,11 +1,27 @@
 .contacts {
+  .container {
+    @media screen and (max-width: 500px) {
+      text-align: center;
+    }
+  }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (max-width: 500px) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
     li {
       display: flex;
       align-items: center;
       gap: 20px;
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
 
       .icon-background {
         display: flex;

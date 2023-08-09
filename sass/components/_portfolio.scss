@@ -7,20 +7,42 @@
   }
 
   &__list {
+    @media screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     li {
       display: flex;
       justify-content: flex-start;
       gap: 40px;
 
-      height: 400px;
-      padding: 15px;
+      padding: 25px;
 
       border-radius: 10px;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       background-color: #fff;
 
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        max-width: 100%;
+        padding: 15px;
+      }
+
+      @media screen and (max-width: 500px) {
+        padding: 15px;
+      }
+
       &:nth-child(2n) {
         flex-direction: row-reverse;
+
+        @media screen and (max-width: 900px) {
+          flex-direction: column;
+        }
       }
 
       &:not(:last-child) {
@@ -28,11 +50,16 @@
       }
 
       .project-image {
-        width: 530px;
+        width: 100%;
+        height: 350px;
 
         overflow: hidden;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        @media screen and (max-width: 500px) {
+          height: 300px;
+        }
 
         .vertical-scrolling-img {
           width: 100%;
@@ -47,9 +74,23 @@
         flex-direction: column;
         justify-content: space-between;
 
-        width: 300px;
+        max-width: 300px;
 
         text-align: center;
+
+        h4 {
+          margin-bottom: 0;
+
+          text-transform: uppercase;
+        }
+
+        .project-status {
+          margin: 5px 0 20px 0;
+
+          color: #d3d3d3;
+          font-size: 10px;
+          font-weight: 600;
+        }
 
         span {
           padding: 5px 10px;
