@@ -25,7 +25,7 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
+  <body id="body">
     <header>
       <nav>
         <div class="logo"><a href="#home">Dmytro.dev</a></div>
@@ -150,7 +150,7 @@
               <div class="project-description">
                 <div>
                   <h4>Unest Logistics</h4>
-                  <p>
+                  <p class="project-description__text">
                     This is my first commercial project, a business card site
                     for a logistics company with a form for sending customer
                     data. The data from the form is sent to the telegram
@@ -216,8 +216,8 @@
               <div class="project-description">
                 <div>
                   <h4>Your Pet</h4>
-                  <p class="project-status">Team project</p>
-                  <p>
+                  <p class="project-description__status">Team project</p>
+                  <p class="project-description__text">
                     The Your Pet application caters to individuals interested in
                     locating, adopting, or selling their pets. The website
                     provides a user-friendly search feature, allowing users to
@@ -289,8 +289,8 @@
               <div class="project-description">
                 <div>
                   <h4>Wallet</h4>
-                  <p class="project-status">Team project</p>
-                  <p>
+                  <p class="project-description__status">Team project</p>
+                  <p class="project-description__text">
                     "Wallet" - is a project built with React. This application
                     allows users to effectively manage their income and
                     expenses, access statistics for a selected period and offers
@@ -338,8 +338,8 @@
               <div class="project-description">
                 <div>
                   <h4>Nice View</h4>
-                  <p class="project-status">Team project</p>
-                  <p>
+                  <p class="project-description__status">Team project</p>
+                  <p class="project-description__text">
                     "Nice View" is a website of a residential complex that
                     contains detailed information about the complex itself, its
                     advantages, available apartment options, a photo gallery,
@@ -387,7 +387,7 @@
               <div class="project-description">
                 <div>
                   <h4>Web Studio</h4>
-                  <p>
+                  <p class="project-description__text">
                     I created this project on my own while studying at GoIt
                     school. Responsive design and style for three types of
                     devices: desktop, tablet and smartphone. For the convenience
@@ -488,6 +488,23 @@
         <h2>Copyright © 2023. All rights are reserved</h2>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <nav class="mobile-menu__nav">
+        <a class="mobile-menu__link" href="#home">Home</a>
+        <a class="mobile-menu__link" href="#about">About</a>
+        <a class="mobile-menu__link" href="#projects">Portfolio</a>
+        <a class="mobile-menu__link" href="#contacts">Contacts</a>
+      </nav>
+    </div>
+    <!-- Burger menu button -->
+    <button class="hamburger hamburger--arrow-r" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <!-- Burger menu JS -->
+    <script src="./js/burger-menu.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
